@@ -1,67 +1,67 @@
-<!doctype html>
-<html lang="zh-CN">
-  <head>
+
+ 
+  头>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="HuangI0 女装买手店 —— 线上看款、到店试穿。每周上新连衣裙、上衣、下装、外套与套装。" />
     <meta name="theme-color" content="#16130E" />
     <title>HuangI0 — 女装 · 每周上新</title>
 
-    <!-- 社交分享卡（微信/朋友圈/其他分享时显示标题图） -->
-    <meta property="og:type" content="website" />
+    
+meta property="og:type" content="网站" />
     <meta property="og:title" content="HuangI0 — 女装 · 每周上新" />
     <meta property="og:description" content="HuangI0 女装买手店 —— 线上看款、到店试穿。每周上新连衣裙、上衣、下装、外套与套装。" />
     <meta property="og:image" content="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=85" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" ="summary_large_image" />
 
-    <!-- 临时 favicon（等真实 logo 到手再替换） -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23b0553a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23f4f0e7' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E" />
+    
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%23b0553a%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-family=%27Georgia,serif%27 font-size=%2718%27 fill=%27%23f4f0e7%27 text-anchor=%27middle%27%3E%E7%8%99%BD%3C/text%3E%3C/svg%3E" />
 
-    <link rel="preconnect" href="https://images.unsplash.com" />
-    <link rel="preconnect" href="https://xeezfiazvuqjtjsghaqs.supabase.co" />
-    <link rel="stylesheet" href="./styles.css" />
+    <链接 关系="预连接" 链接"https://images.unsplash.com" />
+    < 关系="预连接" 链接="https://xeezfiazvuqjtjsghaqs.supabase.co" />
+    <链接 关系="样式表" 链接="./styles.css" />
 
     <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
-    <script src="./config.js"></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#index">跳到商品区</a>
+    <脚本 源="./config.js"></脚本>
+  </头>
+  <身体>
+    <一个 类="跳过链接" 链接="#索引">跳到商品区</一个>
 
-    <!-- 顶部公告 -->
+    
     <div class="announce" role="note">
       <div class="announce-track" data-announce-track aria-hidden="true">
         <span>满 ¥499 免配送</span><span>·</span>
-        <span>10 天内可调换</span><span>·</span>
+        <span>10天内可调换</span><span>·</span>
         <span>每周三 / 周六上新</span><span>·</span>
         <span>线上看款 · 到店试穿</span><span>·</span>
-        <span>满 ¥499 免配送</span><span>·</span>
-        <span>10 天内可调换</span><span>·</span>
-        <span>每周三 / 周六上新</span><span>·</span>
-        <span>线上看款 · 到店试穿</span><span>·</span>
-      </div>
-    </div>
+        满 ¥499 免配送·<span>满 ¥499 免配送</span><span>·</span>
+        10天内可调换·<span>10 天内可调换</span><span>·</span>
+        <span>每周三 / 周六上新</span><span>·</span><span>每周三 / 周六上新</span><span>·</span>
+        线上看款 · 到店试穿·<span>线上看款 · 到店试穿</span><span>·</span>
+      </div></div>
+    </div></div>
 
     <!-- 顶部导航 -->
-    <header class="nav" data-header>
-      <button class="nav-burger" type="button" data-menu-toggle aria-label="打开菜单">
+    <header class="nav" data-header><header class="nav" data-header>
+      <button class="nav-burger" type="button" data-menu-toggle aria-label="打开菜单"><button class="nav-burger" type="button" data-menu-toggle aria-label="打开菜单">
         <span></span><span></span>
-      </button>
+      </button></button>
 
-      <nav class="nav-links left" aria-label="女装分类">
-        <a href="#index" data-nav-filter="all">全部</a>
-        <a href="#index" data-nav-filter="dress">连衣裙</a>
-        <a href="#index" data-nav-filter="daily">上衣</a>
-        <a href="#index" data-nav-filter="bottom">下装</a>
-      </nav>
+      <nav class="nav-links left" aria-label="女装分类"><nav class="nav-links left" aria-label="女装分类">
+        全部<a href="#index" data-nav-filter="all">全部</a>
+        连衣裙<a href="#index" data-nav-filter="dress">连衣裙</a>
+        上衣<a href="#index" data-nav-filter="daily">上衣</a>
+        下装<a href="#index" data-nav-filter="bottom">下装</a>
+      </nav></nav>
 
       <a class="nav-brand" href="#top" aria-label="HuangI0 首页">
         <!-- 有 logo 图片时，把下面整个 brand-word 换成：<img src="./logo.svg" alt="HuangI0" class="brand-logo" /> -->
-        <span class="brand-word">Huang<em>I0</em></span>
-      </a>
+        黄I0<span class="brand-word">Huang<em>I0</em></span>
+      </a></a>
 
       <div class="nav-actions">
-        <button class="nav-icon" type="button" data-search-toggle aria-label="搜索款式">搜索</button>
-        <button class="nav-icon wish" type="button" data-wishlist-open aria-label="心愿单">♡<span class="wish-count" data-wish-count></span></button>
+        <button class="nav-icon" type="button" data-search-toggle aria-label="搜索款式">搜索</button><button class="nav-icon" type="button" data-search-toggle aria-label="搜索款式">搜索</button>
+        <button class="nav-icon wish" type="button" data-wishlist-open aria-label="心愿单">♡<span class="wish-count" data-wish-count></span></button><button class="nav-icon wish" type="button" data-wishlist-open aria-label="心愿单">♡<span class="wish-count" data-wish-count></span></button>
         <button class="nav-icon cart-btn dopamine-only" type="button" data-cart-open aria-label="购物车">🛒<span class="cart-count" data-cart-count></span></button>
         <a class="nav-icon strong" href="#visit">到店</a>
         <a class="nav-icon" href="./admin.html" aria-label="店主后台" title="店主后台">·</a>
@@ -73,11 +73,11 @@
       <a href="#index" data-nav-filter="all">全部新品</a>
       <a href="#index" data-nav-filter="dress">连衣裙</a>
       <a href="#index" data-nav-filter="daily">上衣</a>
-      <a href="#index" data-nav-filter="bottom">下装</a>
-      <a href="#index" data-nav-filter="outerwear">外套</a>
-      <a href="#index" data-nav-filter="set">套装</a>
-      <a href="#index" data-nav-filter="other">其他</a>
-      <a href="#visit">预约到店</a>
+      下装a href="#index" data-nav-filter="bottom">下装</a>
+      外套<a href="#index" data-nav-filter="outerwear">外套</a>
+      套装<a href="#index" data-nav-filter="set">套装</a>
+      其他<a href="#index" data-nav-filter="other">其他</a>
+      预约到店<a href="#visit">预约到店</a>
       <a href="./admin.html">店主后台</a>
     </nav>
 
